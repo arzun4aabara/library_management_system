@@ -12,8 +12,8 @@ COLUMNS = [
     "availability"
 ]
 
-def load_books():
 # Load book records from the CSV file
+def load_books():
 
     try:
         books_df = pd.read_csv(CSV_FILE)
@@ -25,7 +25,7 @@ def load_books():
     return books_df
 
 
-def save_books(books_df):
 # Save the DataFrame back to the CSV file
+def save_books(books_df):
 
     books_df.to_csv(CSV_FILE, index=False)
